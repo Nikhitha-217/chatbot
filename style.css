@@ -1,0 +1,107 @@
+.{
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    background: #31363F;
+}
+.title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: azure;
+}
+.chat{
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: url('https://res.cloudinary.com/ds6ennjmq/image/upload/v1714115382/chatbot-3d-illustration-concept-web-app-using-nlp-engage-conversation_1995-873_qn1qdh.avif');
+    background-repeat: no-repeat;
+    color: black;
+}
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.user{
+    justify-content: flex-end;
+}
+.bot{
+    justify-content: flex-start;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user .avatar{
+    order: 2;
+    background: url('https://res.cloudinary.com/ds6ennjmq/image/upload/v1714111635/user_ztz1xm.webp');
+    background-size: cover;
+}
+.bot .avatar{
+    order: 1;
+    background: url('https://res.cloudinary.com/ds6ennjmq/image/upload/v1714113784/graident-ai-robot-vectorart_78370-4114_jvz9ku.avif');
+    background-size: cover;
+}
+.text{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+.user .text{
+    background: white;
+}
+.bot .text{
+    background: white;
+}
+.input{
+    position: relative;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    padding: 8px;
+}
+.input:focus{
+    border-color: white;
+    color: black;
+}
+.button{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+.chat::-webkit-scrollbar {
+    width: 10px;
+}
+.chat::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
